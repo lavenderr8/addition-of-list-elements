@@ -1,21 +1,16 @@
-list_1 = [0, 2, 2, 4, 4]
-list_2 = [9, 6, 7, 4, 5]
+def sum_of_list_elements(list_one, list_two):
+    list_3 = []
+    min_len_list = min(list_1, list_2, key=len)
+    max_len_list = max(list_1, list_2, key=len)
+    min_len = len(min_len_list)
+
+    for i in range(min_len):
+        list_3.append(list_1[i] + list_2[i])
+
+    list_3.extend(max_len_list[min_len:])
+    print(list_3)
 
 
-def get_element_or_0(lst, index):
-    if index >= len(lst):
-        return 0
-    return lst[index]
-
-
-list_3 = []
-n = len(list_1)
-l = len(list_2)
-m = max(n, l)
-
-for i in range(m):
-    item = get_element_or_0(list_1, i) + get_element_or_0(list_2, i)
-    list_3.append(item)
-
-print(list_3)
-print(m)
+list_1 = [0, 0, 1, 1, 2, 2, 6]
+list_2 = [0, 1, 1, 2, 2, 3]
+sum_of_list_elements(list_1, list_2)
