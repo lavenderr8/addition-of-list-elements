@@ -11,6 +11,6 @@ def sum_of_list_elements(list_1, list_2):
     print(list_3)
 
 
-list_1 = [0, 0, 1, 1, 2, 2, 6]
-list_2 = [0, 1, 1, 2, 2, 3]
-sum_of_list_elements(list_1, list_2)
+list_one = [0, 0, 1, 1, 2, 2, 6]
+list_two = [0, 1, 1, 2, 2, 3]
+sum_of_list_elements(list_one, list_two)
