@@ -1,4 +1,4 @@
-def sum_of_list_elements(list_one, list_two):
+def sum_of_list_elements(list_1, list_2):
     list_3 = []
     min_len_list = min(list_1, list_2, key=len)
     max_len_list = max(list_1, list_2, key=len)
